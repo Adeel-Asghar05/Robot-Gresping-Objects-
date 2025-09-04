@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<robot name="urdf-created-robot-arm" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="grip-base-to-grip_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="grip-base-to-grip">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="grip-base-to-grip_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="grip-base-to-grip2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="grip-base-to-grip2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="grip-base-to-grip2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="base-to-rod_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base-to-rod">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base-to-rod_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="arm2-to-grip-rod_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="arm2-to-grip-rod">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="arm2-to-grip-rod_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="grip-rod-to-grip-bse_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="grip-rod-to-grip-bse">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="grip-rod-to-grip-bse_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rod-to-arm1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rod-to-arm1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rod-to-arm1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="1sr-arm-to-2nd-arm_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="1sr-arm-to-2nd-arm">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="1sr-arm-to-2nd-arm_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
