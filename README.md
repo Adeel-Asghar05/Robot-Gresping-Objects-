@@ -7,6 +7,8 @@ The simulation integrates inverse kinematics, keyboard teleoperation, and object
 
 Loads a custom robot (final.urdf) and workspace (waste.urdf).
 
+waste.ipynb as table where objects are placed and trash bins besides of robot base 
+
 Uses camera simulation (fixed_camera.py, robot_view.py) for RGB-D sensing.
 
 Converts depth maps to 3D point clouds for object pose estimation.
