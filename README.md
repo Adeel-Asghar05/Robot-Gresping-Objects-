@@ -88,7 +88,7 @@ Returns to rest pose.
 
 📂 Project Structure
 ├── main.py                # Simulation entry script
-├── 3D / final.urdf             # Robot model
+├── final.urdf-------> meshes path 3D/meshes/meshname.stl   # Robot model
 ├── waste.urdf             # Table/workspace
 ├── obj4.urdf              # Sample object
 ├── fixed_camera.py        # Camera utilities
