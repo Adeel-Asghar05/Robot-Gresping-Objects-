@@ -1,0 +1,240 @@
+<?xml version="1.0" ?>
+<robot name="table">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.04188068176084348 -0.883911049031494 0.1746331227053194" rpy="0 0 0"/>
+    <mass value="68.91045327965294"/>
+    <inertia ixx="5.939428" iyy="23.222446" izz="28.133865" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/table.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="wooden">
+    <color rgba="0.820, 0.760, 0.650, 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 -0.885 .109" rpy="0 0 0"/>
+     <geometry>
+      <box size=" 1.5 0.8 .265 "/>    
+    </geometry>
+  </collision>
+</link>
+<link name="b1">
+  <inertial>
+    <origin xyz="0.8271161069545363 -0.2249999999999995 0.09346657638643491" rpy="0 0 0"/>
+    <mass value="8.99308242151223"/>
+    <inertia ixx="0.217037" iyy="0.217037" izz="0.311973" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/b1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     <material name="woode">
+    <color rgba="0.780, 0.900, 0.850, 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0.83 -0.06 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="0.83 -0.39 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="1.0 -0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="0.66 -0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+  
+    <collision>
+    <origin xyz="0.82 -0.225 0.01" rpy="0 0 0"/>
+    <geometry>
+      <box size=" 0.33 0.35 0.021 "/>    
+    </geometry>
+  </collision>
+  
+</link>
+<link name="b2">
+  <inertial>
+    <origin xyz="-0.8228838930454637 -0.2249999999999995 0.09346657638643491" rpy="0 0 0"/>
+    <mass value="8.99308242151223"/>
+    <inertia ixx="0.217037" iyy="0.217037" izz="0.311973" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/b2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+       <material name="woode">
+    <color rgba="0.780, 0.900, 0.850, 1.0"/>
+    </material>
+  </visual>
+   <collision>
+    <origin xyz="-0.83 -0.06 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="-0.83 -0.39 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="-1.0 -0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="-0.66 -0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+  
+    <collision>
+    <origin xyz="-0.82 -0.225 0.01" rpy="0 0 0"/>
+    <geometry>
+      <box size=" 0.33 0.35 0.021 "/>    
+    </geometry>
+  </collision>
+</link>
+<link name="b3">
+  <inertial>
+    <origin xyz="-0.8228838930454637 0.2250000000000005 0.09346657638643491" rpy="0 0 0"/>
+    <mass value="8.99308242151223"/>
+    <inertia ixx="0.217037" iyy="0.217037" izz="0.311973" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/b3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+       <material name="woode">
+    <color rgba="0.780, 0.900, 0.850, 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="-0.83 0.06 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="-0.83 0.39 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="-1.0 0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="-0.66 0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+  
+    <collision>
+    <origin xyz="-0.82 0.225 0.01" rpy="0 0 0"/>
+    <geometry>
+      <box size=" 0.33 0.35 0.021 "/>    
+    </geometry>
+  </collision>
+</link>
+<link name="b4">
+  <inertial>
+    <origin xyz="0.8271161069545363 0.2250000000000005 0.09346657638643491" rpy="0 0 0"/>
+    <mass value="8.99308242151223"/>
+    <inertia ixx="0.217037" iyy="0.217037" izz="0.311973" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/b4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+       <material name="woode">
+    <color rgba="0.780, 0.900, 0.850, 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0.83 0.06 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="0.83 0.39 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.35 0.021 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="1.0 0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+    <collision>
+    <origin xyz="0.66 0.225 0.125" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.021 0.35 0.25"/>    
+    </geometry>
+  </collision>
+  
+    <collision>
+    <origin xyz="0.82 0.225 0.01" rpy="0 0 0"/>
+    <geometry>
+      <box size=" 0.33 0.35 0.021 "/>    
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint_b1" type="fixed">
+  <parent link="base_link"/>
+  <child link="b1"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<joint name="joint_b2" type="fixed">
+  <parent link="base_link"/>
+  <child link="b2"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<joint name="joint_b3" type="fixed">
+  <parent link="base_link"/>
+  <child link="b3"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<joint name="joint_b4" type="fixed">
+  <parent link="base_link"/>
+  <child link="b4"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+</robot>
