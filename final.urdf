@@ -1,0 +1,275 @@
+<?xml version="1.0" ?>
+<robot name="urdf-created-robot-arm" >
+
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.011212285461385812 3.7440178664630766e-05 0.26610601777637316" rpy="0 0 0"/>
+        <mass value="4.450889744850087"/>
+    <inertia ixx="3.636239" iyy="6.762527" izz="7.131112" ixy="0.000191" iyz="0.000144" ixz="-0.012625"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+      <material name="iron">
+      <color rgba="0.4392 0.5020 0.5647 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="grip2_1">
+  <inertial>
+    <origin xyz="0.06669822505310585 -0.05129673726504047 0.009231213593641985" rpy="0 0 0"/>
+    <mass value="0.05686278852886531"/>
+    <inertia ixx="0.001245" iyy="0.00148" izz="0.00148" ixy="0.000449" iyz="8.7e-05" ixz="0.000449"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.24164 0.911802 -0.7855" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="iron">
+      <color rgba="0.25 0.27 0.30 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0.24164 0.911802 -0.7855" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="grip1_1">
+  <inertial>
+    <origin xyz="-0.06683730879035193 -0.05143876844297823 0.009089182415703001" rpy="0 0 0"/>
+    <mass value="0.05686278852886531"/>
+    <inertia ixx="0.001261" iyy="0.001489" izz="0.001489" ixy="-0.00045" iyz="9.3e-05" ixz="-0.00045"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.34364 0.911802 -0.7855" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="iron">
+      <color rgba="0.25 0.27 0.30 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0.34364 0.911802 -0.7855" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rod-link_1">
+  <inertial>
+    <origin xyz="-0.00017794322550324093 6.160532441936682e-07 0.5308194187745353" rpy="0 0 0"/>
+      <mass value="5.543670663079757"/>
+    <inertia ixx="19.425321" iyy="19.361664" izz="1.790332" ixy="1e-05" iyz="-5.4e-05" ixz="0.016118"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.265 -0.0 -0.0645" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rod-link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="iron-grey">
+    <color rgba="0.650 0.710 0.675 1.0"/>
+    </material>
+  </visual>
+   <collision>
+    <origin xyz="0 0 0.85" rpy="0 0 1.5708 "/>
+    <geometry>
+      <cylinder radius="0.12" length="0.56"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="grip-rod_1">
+  <inertial>
+    <origin xyz="0.11999977269486145 0.0027411693482291 0.002740856138199854" rpy="0 0 0"/>
+      <mass value="0.5419936098790756"/>
+    <inertia ixx="0.012445" iyy="0.152918" izz="0.152918" ixy="-0.0" iyz="0.000675" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.41264 0.712925 -1.044481" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip-rod_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     <material name="iron">
+      <color rgba="0.4392 0.5020 0.5647 1.0"/>
+    </material>
+  </visual>
+  <!-- <collision>
+    <origin xyz="0.41264 0.712925 -1.044481" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip-rod_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision> -->
+</link>
+
+<link name="grip-base_1">
+  <inertial>
+    <origin xyz="-2.2730520748970306e-07 -0.14473194208198392 -0.1447322552920135" rpy="0 0 0"/>
+      <mass value="0.06768974762475558"/>
+    <inertia ixx="0.006" iyy="0.003461" izz="0.003461" ixy="-0.0" iyz="-0.002537" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.29264 0.736793 -1.020613" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip-base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     <material name="iron">
+      <color rgba="0.4392 0.5020 0.5647 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0.29264 0.736793 -1.020613" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/grip-base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+
+
+
+
+
+<link name="arm1_1">
+  <inertial>
+    <origin xyz="0.15213625068449144 0.03127568940503136 -0.02094141776146552" rpy="0 0 0"/>
+    <mass value="3.0328862921595334"/>
+    <inertia ixx="1.703468" iyy="2.244142" izz="2.491282" ixy="-0.008002" iyz="0.645254" ixz="0.005302"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.16614 -0.0 -1.1145" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="iron">
+      <color rgba="0.4392 0.5020 0.5647 1.0"/>
+    </material>
+  </visual>
+   <collision>
+    <origin xyz="0.16 0.02 0.015" rpy="-0.655 0 0"/>
+    <geometry>
+      <box size="0.23 1.05 0.25"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm2_1">
+  <inertial>
+    <origin xyz="-0.14547625429899594 -0.11145605239659284 -0.10924584240081248" rpy="0 0 0"/>
+    <mass value="3.804553608488219"/>
+    <inertia ixx="4.756159" iyy="4.783677" izz="4.832867" ixy="-0.138355" iyz="-2.108405" ixz="-0.122322"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.13064 0.34107 -1.408016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/arm2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+      <material name="iron-grey">
+    <color rgba="0.650 0.710 0.675 1.0"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="-0.16 -0.11 -0.1" rpy="0.8 0 0"/>
+    <geometry>
+      <box size="0.23 0.6 0.26"/>
+    </geometry>
+  </collision>
+  
+<collision>
+    <origin xyz="-0.25 -0.41 -0.4" rpy="0 1.5708  0"/>
+    <geometry>
+      <cylinder radius="0.107" length="0.06"/>
+    </geometry>
+  </collision>
+  <collision>
+
+    <origin xyz="-0.075 -0.41 -0.4" rpy="0 1.5708  0"/>
+    <geometry>
+      <cylinder radius="0.107" length="0.06"/>
+    </geometry>
+  </collision>
+
+  
+</link>
+
+<joint name="grip-base-to-grip" type="revolute">
+  <origin xyz="0.051 -0.175009 -0.235113" rpy="0 0 0"/>
+  <parent link="grip-base_1"/>
+  <child link="grip2_1"/>
+  <axis xyz="-0.0 0.707107 -0.707107"/>
+  <limit upper="1.22173" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="grip-base-to-grip2" type="revolute">
+  <origin xyz="-0.051 -0.175009 -0.235113" rpy="0 0 0"/>
+  <parent link="grip-base_1"/>
+  <child link="grip1_1"/>
+  <axis xyz="-0.0 0.707107 -0.707107"/>
+  <limit upper="0.0" lower="-1.22173" effort="100" velocity="100"/>
+</joint>
+<!-- 3.141593 -->
+<!-- 3.141593 -->
+<joint name="base-to-rod" type="revolute">
+  <origin xyz="-0.265 0.0 0.0645" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rod-link_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="3.141593" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+<joint name="arm2-to-grip-rod" type="revolute">
+  <origin xyz="-0.282 -0.371855 -0.363535" rpy="0 0 0"/>
+  <parent link="arm2_1"/>
+  <child link="grip-rod_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="grip-rod-to-grip-bse" type="revolute">
+  <origin xyz="0.12 -0.023868 -0.023868" rpy="0 0 0"/>
+  <parent link="grip-rod_1"/>
+  <child link="grip-base_1"/>
+  <axis xyz="-0.0 0.707107 0.707107"/>
+  <limit upper="3.141593" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+<!-- 3.117994 -->
+<!-- -1.412665 -->
+<joint name="rod-to-arm1" type="revolute">
+  <origin xyz="0.09886 0.0 1.05" rpy="0 0 0"/>
+  <parent link="rod-link_1"/>
+  <child link="arm1_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="3.117994 " lower="-1.412665" effort="100" velocity="100"/>
+</joint>
+<!-- 3.839724 -->
+<joint name="1sr-arm-to-2nd-arm" type="revolute">
+  <origin xyz="0.0355 -0.34107 0.293516" rpy="0 0 0"/>
+  <parent link="arm1_1"/>
+  <child link="arm2_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+  <limit upper="3.839724" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+
+
+
+
+
+
+
+</robot>
