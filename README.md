@@ -42,12 +42,12 @@ object_pose.py → Functions for object pose + grasp detection
 
 ▶️ Usage
 
-Run the simulation:
+Run the simulation in notebook:
 
-python main.py
+python Robot.ipynb
 
 
-Where main.py contains the provided code.
+Where robot.ipynb contains the provided code.
 
 🎮 Controls
 Key	Action
@@ -86,7 +86,7 @@ Returns to rest pose.
 
 📂 Project Structure
 ├── main.py                # Simulation entry script
-├── final.urdf             # Robot model
+├── 3D / final.urdf             # Robot model
 ├── waste.urdf             # Table/workspace
 ├── obj4.urdf              # Sample object
 ├── fixed_camera.py        # Camera utilities
