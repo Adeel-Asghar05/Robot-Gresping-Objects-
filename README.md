@@ -25,7 +25,12 @@
 
     Install dependencies:
 
-    pip install pybullet numpy
+    pip install
+    pybullet==3.2.6
+    numpy==1.26.4
+    torch==2.0.1
+    gymnasium==0.29.1
+    stable-baselines3==2.2.1
 
 
 Ensure the following project files exist in the repository:
